@@ -1,0 +1,11 @@
+// builda e compila aplicacao
+dotnet run
+
+// conecte-se à API Web executando o seguinte comando:
+httprepl https://localhost:7245/
+
+Faça uma solicitação POST para adicionar uma nova pizza a HttpRepl usando o seguinte comando:
+post -c "{"Nome":"Frango", "EhLivreDeGluten":false}"
+
+Atualize a nova pizza frango para uma pizza milho com uma solicitação PUT usando o seguinte comando:
+put 3 -c  "{"id": 3, "Nome":"Milho", "EhLivreDeGluten":true}"
